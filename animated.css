@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+height: 100vh;
+width: 100%;
+background-image: url(images/road.jpg);
+background-size: cover;
+background-position: center;
+}
+.plane{
+    width: 700px;
+    height:350px ;
+    bottom: 200px;
+    right: -400px;
+    position: absolute;
+    animation: pintu_plane 4s linear infinite;
+     transform-origin: 100% 50%; /* Rotating from the end  */
+}
+@keyframes pintu_plane{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform: translateX(-500px) translateY(0px) rotate(2deg);;
+    }
+    100%{
+        transform: translateX(-1500px) translateY(-200px) rotate(20deg);;
+    }
+}
